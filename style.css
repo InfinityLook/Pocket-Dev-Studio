@@ -31,7 +31,7 @@ header {
 /* Nastavení vzhledu číslování řádků */
 .CodeMirror-linenumber {
     font-size: 16px;      /* Zvětšení textu čísel */
-    color: #555;          /* Barva čísel (tmavě šedá) */
+    color: black;          /* Barva čísel (cerna) */
     width: 30px !important; /* Dostatečná šířka pro čísla */
 }
 
