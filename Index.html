@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pocket Dev Studio</title>
+    <style>
+        body { font-family: sans-serif; background: #121212; color: #e0e0e0; padding: 20px; }
+        textarea { width: 100%; height: 300px; background: #1e1e1e; color: #00ff00; border: 1px solid #333; padding: 10px; font-family: monospace; border-radius: 5px; }
+        button { width: 100%; padding: 15px; background: #4a90e2; border: none; color: white; font-weight: bold; margin-top: 10px; border-radius: 5px; cursor: pointer; }
+        #output { margin-top: 20px; padding: 10px; background: #000; border-left: 4px solid #4a90e2; min-height: 50px; }
+    </style>
+</head>
+<body>
+    <h1>Pocket Dev Studio</h1>
+    <textarea id="editor" placeholder="Napiš JavaScript kód sem..."></textarea>
+    <button onclick="spustitKod()">Spustit kód</button>
+    <h3>Výstup:</h3>
+    <div id="output"></div>
+
+    <script>
+        function spustitKod() {
+            const kod = document.getElementById('editor').value;
+            const output = document.getElementById('output');
+            try {
+                // Přesměrujeme logování do našeho okna
+                console.log = (msg) => output.innerHTML += msg + "<br>";
+                const vysledek = eval(kod);
+                output.innerHTML = "Výsledek: " + vysledek;
+            } catch (err) {
+                output.innerHTML = "Chyba: " + err.message;
+            }
+        }
+    </script>
+</body>
+</html>
