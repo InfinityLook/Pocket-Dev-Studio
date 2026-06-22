@@ -26,3 +26,13 @@ header {
     font-size: 16px; /* Lepší čitelnost na mobilu */
 }
 
+/* Barva čísel řádků */
+.CodeMirror-linenumber {
+    color: #999; 
+    font-size: 14px;
+}
+
+/* Barva aktivního řádku (kde máš kurzor) */
+.CodeMirror-activeline-background {
+    background: #f0f0f0;
+}
