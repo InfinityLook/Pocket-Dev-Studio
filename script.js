@@ -2,9 +2,10 @@ const editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
     mode: "javascript",
     lineNumbers: true,
     theme: "default",
-    lineWrapping: true,
-    
+    lineWrapping: true, // Tohle je na mobilu KLÍČOVÉ!
+    styleActiveLine: true // Toto zvýrazní řádek, na kterém píšeš
 });
+
 
 // 1. Načtení uloženého kódu při otevření stránky
 const savedCode = localStorage.getItem("pocketDevCode");
