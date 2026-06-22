@@ -8,7 +8,27 @@
     <link rel="stylesheet" href="script.js">
 </head>
 <body>
-    <header>
+    
+        <header>
+        <div class="menu-bar">
+            <button onclick="toggleMenu('fileMenu')">Soubor</button>
+            <button onclick="toggleMenu('editMenu')">Upravit</button>
+            <button onclick="toggleMenu('viewMenu')">Zobrazit</button>
+            <button id="runBtn" style="background:#2ea44f;">▶ Run</button>
+        </div>
+        
+        <div id="fileMenu" class="submenu" style="display:none;">
+            <button onclick="alert('Nový')">Nový soubor</button>
+            <button onclick="alert('Uloženo')">Uložit lokálně</button>
+        </div>
+        <div id="editMenu" class="submenu" style="display:none;">
+            <button onclick="editor.undo()">Zpět</button>
+            <button onclick="editor.redo()">Vpřed</button>
+        </div>
+        <div id="viewMenu" class="submenu" style="display:none;">
+            <button onclick="toggleTheme()">Tmavý režim</button>
+        </div>
+    
         <button id="saveBtn">Uložit na GitHub</button>
     </header>
     
