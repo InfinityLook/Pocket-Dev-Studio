@@ -28,8 +28,8 @@ header {
 
 /* Barva čísel řádků */
 .CodeMirror-linenumber {
-    color: #999; 
-    font-size: 14px;
+    color: #black; 
+    font-size: 10px;
 }
 
 /* Barva aktivního řádku (kde máš kurzor) */
