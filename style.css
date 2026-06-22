@@ -26,10 +26,20 @@ header {
     font-size: 16px; /* Lepší čitelnost na mobilu */
 }
 
-/* Barva čísel řádků */
+
+
+/* Nastavení vzhledu číslování řádků */
 .CodeMirror-linenumber {
-    color: #black; 
-    font-size: 10px;
+    font-size: 16px;      /* Zvětšení textu čísel */
+    color: #555;          /* Barva čísel (tmavě šedá) */
+    width: 30px !important; /* Dostatečná šířka pro čísla */
+}
+
+/* Nastavení celého levého panelu s čísly */
+.CodeMirror-gutters {
+    background: #f7f7f7;  /* Světle šedé pozadí panelu */
+    border-right: 1px solid #ddd; /* Oddělovací čára */
+    width: 40px;          /* Celková šířka panelu */
 }
 
 /* Barva aktivního řádku (kde máš kurzor) */
