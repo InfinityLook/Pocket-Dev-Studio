@@ -1,65 +1,28 @@
-/* Základní nastavení celé stránky */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background: #121212;
-    color: #e0e0e0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     display: flex;
     flex-direction: column;
 }
 
-/* Nadpis aplikace */
-h1 {
-    font-size: 1.2rem;
-    padding: 15px;
-    margin: 0;
-    background: #1e1e1e;
-    border-bottom: 1px solid #333;
-    text-align: center;
+header {
+    background: #333;
+    padding: 10px;
+    text-align: right;
 }
 
-/* Hlavní editor kódu */
-#editor {
-    flex-grow: 1;
-    width: 100%;
-    background: #1e1e1e;
-    color: #00ff00;
-    border: none;
-    padding: 15px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 16px;
-    outline: none;
-    box-sizing: border-box;
-    resize: none; /* Zakáže ruční změnu velikosti, aby se nerozbyl layout */
-}
-
-/* Tlačítko pro spuštění */
-button {
-    padding: 20px;
-    background: #4a90e2;
-    border: none;
+#saveBtn {
+    background: #2ea44f;
     color: white;
-    font-weight: bold;
-    font-size: 18px;
+    border: none;
+    padding: 8px 15px;
     cursor: pointer;
-    transition: background 0.2s;
 }
 
-button:active {
-    background: #357abd;
-}
-
-/*výstup kódu */
-#output {
-    padding: 15px;
-    background: #000;
-    color: #fff;
-    border-top: 2px solid #4a90e2;
-    font-size: 14px;
-    min-height: 80px;
-    max-height: 150px;
-    overflow-y: auto;
+/* CodeMirror editor - aby vyplnil zbytek obrazovky */
+.CodeMirror {
+    height: 100%;
+    font-size: 16px; /* Lepší čitelnost na mobilu */
 }
 
