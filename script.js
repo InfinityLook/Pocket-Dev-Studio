@@ -1,7 +1,9 @@
 const editor = CodeMirror.fromTextArea(document.getElementById("editor"), {
     mode: "javascript",
     lineNumbers: true,
-    theme: "default"
+    theme: "default",
+    lineWrapping: true,
+    
 });
 
 // 1. Načtení uloženého kódu při otevření stránky
