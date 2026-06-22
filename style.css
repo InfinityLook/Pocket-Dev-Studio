@@ -22,9 +22,12 @@ header {
 
 /* CodeMirror editor - aby vyplnil zbytek obrazovky */
 .CodeMirror {
-    height: 100%;
-    font-size: 16px; /* Lepší čitelnost na mobilu */
+    height: 100% !important;
+    font-size: 18px !important; /* Zvětšíme text kódu */
+    font-family: 'Courier New', monospace; /* Písmo ideální pro programování */
+    line-height: 1.5; /* Větší mezery mezi řádky pro snazší klikání */
 }
+
 
 
 
@@ -37,9 +40,7 @@ header {
 }
 
 /* Rozšíření panelu, aby se čísla vešla */
-.CodeMirror-gutters {
-    width: 45px !important;        /* O kousek širší panel */
-}
+
 
 /* Nastavení celého levého panelu s čísly */
 .CodeMirror-gutters {
@@ -50,5 +51,9 @@ header {
 
 /* Barva aktivního řádku (kde máš kurzor) */
 .CodeMirror-activeline-background {
-    background: #f0f0f0;
+    background: #e8f0fe !important;
+}
+/* Úprava barev kurzoru */
+.CodeMirror-cursor {
+    border-left: 2px solid #000 !important;
 }
