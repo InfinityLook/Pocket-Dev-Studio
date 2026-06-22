@@ -28,11 +28,17 @@ header {
 
 
 
-/* Nastavení vzhledu číslování řádků */
+
+/* Nastavení číslování řádků */
 .CodeMirror-linenumber {
-    font-size: 16px;      /* Zvětšení textu čísel */
-    color: black;          /* Barva čísel (cerna) */
-    width: 30px !important; /* Dostatečná šířka pro čísla */
+    font-size: 20px !important;    /* Větší velikost */
+    font-weight: 800 !important;   /* Velmi tučné písmo */
+    color: #000000 !important;     /* Černá barva */
+}
+
+/* Rozšíření panelu, aby se čísla vešla */
+.CodeMirror-gutters {
+    width: 45px !important;        /* O kousek širší panel */
 }
 
 /* Nastavení celého levého panelu s čísly */
